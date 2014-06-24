@@ -1,0 +1,243 @@
+
+body {
+	margin:0px;
+	padding:0px;
+	font-family:verdana, arial, helvetica, sans-serif;
+	color:#333;
+   background-image: url('images/sfondo.jpg');
+/*    background-repeat: no-repeat; */
+   background-attachment: fixed;
+}
+
+body.intro {
+	background-color:#004c1f;
+   background-image: url('none');
+}
+
+
+
+h1,h2 {
+	margin: 25px 0px 15px 0px;
+	padding:0px;
+	font-size:26px;
+	line-height:28px;
+	font-weight:100;
+	color:#005925;
+	}
+h2 {
+   color: #050;
+   font-size:20px;
+   border-top: 1px dashed;
+   margin-top: 20px;
+}
+p, li, td {
+	/*font:11px/20px verdana, arial, helvetica, sans-serif;*/
+	/*font:14px/20px helvetica, verdana, arial, sans-serif;*/
+	font:14px/20px;
+	margin:0px 0px 16px 0px;
+	padding:0px;
+   text-indent: 0px;
+}
+body p.first-line { text-indent: 0px; margin-left: 0px;}
+li {
+   margin: 0px 0px 0px 0px;
+}
+
+
+#Content>p {margin:0px;}
+#Content>p+p {text-indent:30px;}
+
+a {
+	color:#09c;
+	text-decoration:none;
+	/* font:14px/20px verdana, arial, helvetica, sans-serif; */
+	font:14px/20px;
+}
+a:link {color:#095;}
+a:visited {color:#095;}
+a:hover {background-color:#eee;}
+
+a.enhanced {
+	color:#09c;
+	text-decoration:none;
+	font:14px/20px verdana, arial, helvetica, sans-serif;
+   font-weight:bold;
+}
+a.enhanced:link {color:#095;}
+a.enhanced:visited {color:#095;}
+a.enhanced:hover {background-color:#eee;}
+
+a img {
+   border-width: 0px;
+}
+
+a.intro {
+   font-size: 24px;
+   color: #00EE00;
+}
+a.intro:link {
+   background-color:#004C1F;
+   color:#00EE00;
+}
+a.intro:visited {
+   background-color:#004C1F;
+   color:#00EE00;
+}
+a.intro:hover {
+   background-color:#004C1F;
+   color:#EE0000;
+}
+p.intro {
+	font:18px verdana, arial, helvetica, sans-serif;
+	margin:0px 0px 7px 0px;
+	padding:0px;
+   color: #efdeb8;
+}
+
+#Header {
+	margin:10px 0px 10px 0px;
+	padding:12px 57px 12px 20px;
+	/* For IE5/Win's benefit height = [correct height] + [top padding] + [top and bottom border widths] */
+	/*height:33px; /* 14px + 17px + 2px = 33px */
+	/*line-height:11px;*/
+	background-color:#004c1f;
+	background-color:#005000;
+
+/* Here is the ugly brilliant hack that protects IE5/Win from its own stupidity. 
+Thanks to Tantek Celik for the hack and to Eric Costello for publicizing it. 
+IE5/Win incorrectly parses the "\"}"" value, prematurely closing the style 
+declaration. The incorrect IE5/Win value is above, while the correct value is 
+below. See http://glish.com/css/hacks.asp for details. */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	/*height:14px; /* the correct height */
+	}
+/* I've heard this called the "be nice to Opera 5" rule. Basically, it feeds correct 
+length values to user agents that exhibit the parsing error exploited above yet get 
+the CSS box model right and understand the CSS2 parent-child selector. ALWAYS include
+a "be nice to Opera 5" rule every time you use the Tantek Celik hack (above). */
+/*body>#Header {height:14px;}*/
+
+#Content {
+	margin:0px 50px 20px 200px;
+	padding:10px;
+	}
+
+#Menu {
+	position:absolute;
+	top:90px;
+	left:10px;
+	width:172px;
+	padding:10px;
+/*	background-color:#eee; */
+   background-color: transparent;
+/*	border:1px dashed #999; */
+	line-height:17px;
+/* Again, the ugly brilliant hack. */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:150px;
+	}
+/* Again, "be nice to Opera 5". */
+body>#Menu {width:150px;}
+
+#Menu h1 {
+	margin: 20px 0px 5px 0px;
+	padding:0px;
+	font-weight:100;
+   color: #005000;
+   font-size:14px;
+   font-weight: bold;
+   border-bottom: 1px solid;
+}
+
+#Menu ul {
+   list-style: none;
+	margin: 0px 0px 0px 5px;
+	padding: 0px 0px 0px 0px;
+}
+
+#Footer {
+	margin:0px 50px 0px 200px;
+	padding:10px;
+   border-top: 1px dashed #999;
+   text-align: center;
+   clear: both;
+}
+
+#Footer img {
+   vertical-align: middle;
+}
+
+a.navi, a.navi2, a.highlight, a.highlight2 {
+   color:#005925;
+   font-size:12px;
+   text-decoration:none;
+   font-weight:bold;
+   font-family:verdana, arial, helvetica, sans-serif;
+}
+a.navi:hover, a.navi2:hover, a.highlight:hover, a.highlight2:hover {
+   color: #600;
+   background-color: transparent;
+}
+a.highlight, a.highlight2 {
+   color: #050;
+   font-weight: bold;
+   text-decoration: underline;
+}
+a.highlight:visited, a.highlight2:visited {
+   color: #050;
+   font-weight: bold;
+   text-decoration: underline;
+}
+a.navi2, a.highlight2 {
+   padding-left: 10px;
+}
+
+#ContentText {
+	margin:0px 200px 0px 0px;
+}
+#ContentImages {
+   position: absolute;
+   right: 5px;
+   top: 100px;
+}
+
+
+#ContentText2 {
+	margin:0px 200px 0px 0px;
+   width: 79%;
+}
+#ContentImages2 {
+   width: 19%;
+   float: right;
+}
+img.ContentImages2 {
+   margin: 2px 0px 2px 0px;
+   border-width : 0px;
+}
+p.ContentImages2 {
+   text-align: center;
+}
+
+div.Content2 {
+   position: relative;
+   margin:0;padding:0;
+   clear: both;
+   /*
+   overflow: hidden;
+*/
+}
+div.columnb {
+   float:left;
+   width: 77%;
+}
+div.columnt {
+   float: right;
+   margin-right: 5%; 
+   width: 15%;
+}
+
+td { text-align: center; padding: 0.2em 1em 0.2em 1em; }
+td.left { text-align: left; padding: 0.2em 1em 0.2em 1em; }
+td.header { font-weight: bold; }
